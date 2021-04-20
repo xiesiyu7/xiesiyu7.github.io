@@ -1,128 +1,196 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Medium Length Professional CV
-% LaTeX Template
-% Version 2.0 (8/5/13)
+% LaTeX Curriculum Vitae Template
 %
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
+% Copyright (C) 2004-2008 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template
 %
-% Original author:
-% Rishi Shah
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+\documentclass[letterpaper]{article}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{bm}
+% Uncomment the following lines to use the Palatino font.  Remove the
+% [osf] bit if you don't like the old style figures.
 %
-% Important note:
-% This template requires the resume.cls file to be in the same directory as the
-% .tex file. The resume.cls file provides the resume style used for structuring the
-% document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
-\documentclass{resume} % Use the custom resume.cls style
-
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
-\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
-\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
-\name{Rishi Shah} % Your name
-\address{156 Kasturi, Balajinagar, Sangli 416416} % Your address
-%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
-\address{(+91)9975808780 \\ rishishah105@gmail.com} % Your phone number and email
-
+% \usepackage[T1]{fontenc}
+% \usepackage[osf]{mathpazo}
+% Set your name here
+\def\name{Siyu Xie}
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {economics empirical industrial organization econometrics
+    microeconomics applied microeconomics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+\geometry{textheight=8.5in, textwidth=6in}
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+% Customize section headings
+\usepackage{sectsty}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1em}
+  }
+}{
+  \end{list}
+}
 \begin{document}
+\centerline{\huge\bf \name}
+\vspace{0.25in}
+\begin{minipage}[t]{0.8\textwidth}
+Department of Electrical and Computer Engineering (ECE)\\
+Wayne State University (WSU)\\
+5050 Anthony Wayne Drive, Detroit, Michigan 48202, USA\\
+%\emph{Sex}: Female\\
+%\emph{Birth}: May $11^{th}$ 1991\\
+Email: {\tt syxie@wayne.edu}\\
+%\emph{Homepage}: https://xiesiyu7.github.io/\\
+\end{minipage}
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
+\section*{Education}
+2018.04-present~~~~Postdoc in Wayne State University, Detroit, MI 48202, USA
+\begin{itemize}
+    \item ~~~~~~~~~~~~~~~~~~~~~\textit{Supervisor}: Prof. Le Yi Wang (IEEE Fellow) and Prof. Masoud Nazari
+    \end{itemize}
+2018.09-2019.03~~~~Visiting scholar in Academy of Mathematics and Systems Science (AMSS)
+\begin{itemize}
+    \item ~~~~~~~~~~~~~~~~~~~~~~Chinese Academy of Sciences (CAS)
+    \end{itemize}
+2013.09-2018.06~~~~Key Laboratory of Systems and Control
+    \begin{itemize}
+    \item ~~~~~~~~~~~~~~~~~~~~~~AMSS, CAS, Beijing, China
+    \item ~~~~~~~~~~~~~~~~~~~~~~Ph.D degree in control theory
+    \item ~~~~~~~~~~~~~~~~~~~~~~\textit{Supervisor}: Prof. Lei Guo (Academician of Chinese Academy of Sciences)
+    \end{itemize}
+2009.09-2013.06~~~~~Department of Mathematics and Systems Science
+    \begin{itemize}
+    \item ~~~~~~~~~~~~~~~~~~~~~~~Beihang University, Beijing, China
+    \item ~~~~~~~~~~~~~~~~~~~~~~~Bachelor degree in information and computing science (systems control)
+    \end{itemize}
 
-\begin{rSection}{Education}
-
-{\bf Veermata Jijabai Technological Institute, Mumbai} \hfill {\em August 2018 - Present}
-\\ Master in Technology
-\\ Department of Structural Engineering\\
-\\{\bf Maharashtra Institute of Techology, Pune} \hfill {\em July 2013 - June 2017}
-\\ Bachelor of Engineering, Civil.\hfill { Overall Percentage: 68.14 }
-%Minor in Linguistics \smallskip \\
-%Member of Eta Kappa Nu \\
-%Member of Upsilon Pi Epsilon \\
-
-
-\end{rSection}
-
-\begin{rSection}{Carrier Objective}
- To work for an organization which provides me the opportunity to improve my skills and knowledge to grow along with the organization objective.
-\end{rSection}
-%--------------------------------------------------------------------------------
-%    Projects And Seminars
-%-----------------------------------------------------------------------------------------------
-\begin{rSection}{Projects}
-{\bf Dynamic Analysis of Buckling Restrained Braces}
-\\The project aims at designing and fabrication of two Buckling Restrained Braces which were analyzed under dynamic loading. As alternative for conventional braces, these BRBs are also beneficial for seismic retro-fitting in RCC and steel structures.\\
-\\{\bf Indirect Model Analysis of Structures}\\
-Presented a Seminar on Indirect Model Analysis, explaining the method to compute response of Prototype from the Influence lines obtained from Model. Use of Muller Breslau Principle in Indirect Model Analysis and the Similitude between prototype and  model.\\
-
-{\bf Microtunneling}\\
-Presented a seminar on Micro Tunneling, explaining its advantages over conventional method of drainage laying systems. Analysis considering direct and indirect cost of micro tunneling was also discussed.
-
-\end{rSection}
-%----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Technical Strengths}
-
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Modeling and Analysis \ & AutoCad, Revit, StaadPro \\
-Software \& Tools & MS Office, Latex \\
-\end{tabular}
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Work Experience}
-
-\begin{rSubsection}{SJ Contracts, Pune}{June 2016}{Site Engineer}{}
-\item On-site internship under this leading construction company. Learned and implemented various aspects such as quantity estimation, labour management and safety precautions.
-\end{rSubsection}
+\section*{Research Interests}
 
 
-\end{rSection}
+Distributed optimization for power systems, distributed adaptive filters, adaptive signal processing, distributed control theory, networked systems, machine learning, compressive sensing
 
 
-%	EXAMPLE SECTION
-%----------------------------------------------------------------------------------------
+\section*{Skills}
+\begin{itemize}
+\item $\bm{\cdot}$ MATLAB, LATEX, Python
+\item $\bm{\cdot}$ (adaptive) filtering algorithms, estimation of unknown (time-varying) parameters, system identification, adaptive control, distributed adaptive filters, optimization theory, multi-agent system, some general machine learning algorithms and signal processing theory, probability theory and mathematical statistics
+\end{itemize}
 
-\begin{rSection}{Academic Achievements}
- Runners up in B.G.Shirke Vidyarthi Competition for Innovative Project organized by Pune Construction Engineering Research Foundation in January 2018
-\item Won First Prize in Model Making Competition Organized by Symbiosis Institute of Technology, Pune.
-\end{rSection}
 
-\newpage
+\section*{Honors}
+\begin{itemize}
+\item $\bm{\cdot}$ President Scholarship of Chinese Academy of Sciences, 2018.
+\item $\bm{\cdot}$ China National Scholarship for graduate students, 2017. (top 15 among 600 graduate students)
+\item $\bm{\cdot}$ Excellent Student of University of Chinese Academy of Sciences, 2016.
+\item $\bm{\cdot}$ IEEE Control Systems Society Beijing Chapter Youth Author Award, 2015.
+\item $\bm{\cdot}$ Outstanding Student Scholarship of CAS, 2013.
+\end{itemize}
 
-%----------------------------------------------------------------------------------------
-% Extra Curricular
-%----------------------------------------------------------------------------------------
-\begin{rSection}{Extra-Cirrucular} \itemsep -3pt
-\item Co-Organized “ Nirmitee 2017” - a National Symposium of Civil Department of MIT, Pune
-\item Attended a workshop on Autodesk Revit at IIT Bombay in 2014.
-\item Winner of Inter Departmental Football Competition 2015.
-\item Member of the  Rotaract Club Of Pune Pride from 2014 to 2017.
-\item Worked for a start-up company Named OUST as a Regional Marketing Manager
-%\item Trained and disciplined in National Cadet Corps (NCC), IIT Kanpur for a year.
- %\item  Participated in Vijyoshi Camp 2012 organized at Indian Institute of Science, Bangalore.
- %\item Won 2nd position in Kho-Kho in Intramurals conducted by Physical Education Section, IIT Kanpur.
- %\item Pursued French as second language during secondary school from Grade 6 to Grade 10. Also participated in French Song Competition and French G.K. Quiz in Class 10th. %
 
-\end{rSection}
+\section*{Publications}
+\begin{itemize}
+\item $\bm{\cdot}$ D. Gan, S. Y. Xie, and Z. X. Liu, \emph{Stability of the Distributed Kalman Filter With General 
+Random Coefficients}, accepted by \textbf{SCIENCE CHINA Information Sciences}, 2020. (Regular paper)
+\item $\bm{\cdot}$ S. Y. Xie and L. Guo, \emph{Analysis of Compressed Distributed Adaptive Filters}, \textbf{Automatica}, vol. 112, February 2020. (Regular paper)
+\item $\bm{\cdot}$ P. Zhao, X. Q. Wang, S. Y. Xie, L. Guo and Z. H. Zhou, \emph{Distribution-free One-pass Learning}, \textbf{IEEE Transactions on Knowledge and Data Engineering}, August 2019. (Regular paper)
+\item $\bm{\cdot}$ S. Y. Xie and L. Guo, \emph{Analysis of Distributed Adaptive Filters Based on Diffusion Strategies over Sensor Networks}, \textbf{IEEE Transactions on Automatic Control}, vol. 63, no. 11, pp. 3643--3658, November 2018. (Regular paper)
+\item $\bm{\cdot}$ S. Y. Xie and L. Guo, \emph{A Necessary and Sufficient Condition for Stability of LMS-based Consensus Adaptive Filters}, \textbf{Automatica}, vol. 93, pp. 12-19, July 2018. (Regular paper)
+\item $\bm{\cdot}$ S. Y. Xie and L. Guo, \emph{Analysis of NLMS-based Consensus Adaptive Filters under a General Information Condition}, \textbf{SIAM Journal on Control and Optimization} , vol. 56, no. 5, pp. 3404-3431, January 2018. (Regular paper)
+\item $\bm{\cdot}$ S. Y. Xie and L. Guo, \emph{Exponential Stability of LMS-Based Distributed Adaptive Filters}, Proc.of the 20th World Congress of the International Federation of Automatic Control (\textbf{IFAC}), Toulouse, France, July 9-14, 2017, pp. 13764-13769.	
+\item $\bm{\cdot}$ S. Y. Xie and L. Guo, \emph{Compressive Distributed Adaptive Filtering}, 35th Chinese Control Conference (\textbf{CCC}), Chengdu, China, July 2016, pp. 5229-5234.
+\item $\bm{\cdot}$ S. Y. Xie and L. Guo, \emph{Stability of Distributed LMS under Cooperative Stochastic Excitation}, 34th Chinese Control Conference (\textbf{CCC}), Hangzhou, China, July 2015, pp. 7445-7450.
+\end{itemize}
 
-\begin{rSection}{Personal Traits}
-\item Highly motivated and eager to learn new things.
-\item Strong motivational and leadership skills.
-\item Ability to work as an individual as well as in group.
-\end{rSection}
+\section*{Papers in Preparation}
+\begin{itemize}
+\item $\bm{\cdot}$ S. Y. Xie, S. Liang, L. Y. Wang, G. Yin and W. Chen, \emph{Stochastic Adaptive Optimization with Dithers}, submitted to \textbf{IEEE Transactions on Automatic Control}, 2020. (Regular paper)
+\item $\bm{\cdot}$ S. Y. Xie, M. H. Nazari, L. Y. Wang, G. Yin and W. Chen, \emph{Impact of Stochastic Generation/Load Variations on
+Distributed Optimal Energy Management in DC
+Microgrids}, submitted to \textbf{IEEE Transactions on Intelligent Transportation Systems}, 2020. (Regular paper)
+\item $\bm{\cdot}$ M. H. Nazari, S. Y. Xie, L. Y. Wang, G. Yin and W. Chen, \emph{Impact of Communication Packet Delivery Ratio on Reliability and Resilience in Optimal Power Management of DC Microgrids}, submitted to \textbf{IEEE Transactions on Smart Grid}, 2020. (Regular paper)
+\item $\bm{\cdot}$ A. S. Matveev, M. Almodarresi, R.
+Ortega, A. Pyrkin and S. Y. Xie, \emph{Diffusion-based Distributed Parameter Estimation Through Directed Graphs with Switching Topology: Application of Dynamic Regressor Extension and Mixing}, submitted to \textbf{IEEE Transactions on Automatic Control}, 2020. (Regular paper)
+\item $\bm{\cdot}$ S. Y. Xie, Y. Q. Zhang and L. Guo, \emph{Learning and Prediction Theory of Distributed Least Squares}, submitted to \textbf{IEEE Transactions on Automatic Control}, 2019. (Regular paper)
+\end{itemize}
+
+
+
+%\section*{Research Statement}
+%I have studied the stability and performance analyses of the distributed adaptive filtering algorithms under non-independent and non-stationary signal assumptions, and I plan to further study some other distributed filtering and learning algorithms in the future. For the first time, these results have laid a theoretical foundation for the distributed adaptive filters in stochastic feedback systems, which is significant in the network era.
+
+%\section*{Main Research Contributions}
+
+%\begin{itemize}
+%\item $\bm{\cdot}$ For the theoretical analysis of the distributed adaptive filters, most of the existing theory in the literature require stringent conditions that the signals are independent and stationary, while our work does not.
+
+%\item $\bm{\cdot}$ The weakest possible information condition used in our work can be used to demonstrate that the distributed adaptive filters can work well even if any individual filter cannot due to lack of necessary information.
+
+%\item $\bm{\cdot}$ For the first time, these results have laid a theoretical foundation for the distributed adaptive filters in stochastic feedback systems, which is significant in the network era.
+
+%\item $\bm{\cdot}$ Our work makes it possible for further investigations on related problems concerning the combination of control and communication.
+%\end{itemize}
+
+%\newpage
+
+%\section*{Presentations and Invited Plenary Lectures}
+%\begin{itemize}
+%\item $\bm{\cdot}$ 34th Chinese Control Conference, Hangzhou, China, July 2015,\\
+%lecture titled ``Stability of Distributed LMS under Cooperative Stochastic Excitation''.
+%\item $\bm{\cdot}$ 35th Chinese Control Conference, Chengdu, China, July 2016,\\
+%lecture titled ``Compressive Distributed Adaptive Filtering''.
+%\item $\bm{\cdot}$ 20th IFAC World Congress, Toulouse, France, July 2017,\\
+%invited lecture titled ``Exponential Stability of LMS-Based Distributed Adaptive Filters''.
+%\item $\bm{\cdot}$ L. Guo and S. Y. Xie, ``Distributed Adaptive Filtering,'' Plenary Lecture at the 6th IFAC Workshop on Distributed Estimation and Control in Networked Systems (NecSys¡¯2016), Tokyo, Japan, September 2016.    (http://www.necsys2016.ctrl.titech.ac.jp/slides/lguo.pdf)
+%\item $\bm{\cdot}$ L. Guo and S. Y. Xie, ''Distributed Adaptive Filtering Over Sensor Networks,'' Plenary Lecture at the 12th Chinese Conference on Complex Networks (CCCN 2016), Taiyuan, Shanxi, October 2016.    (http://cccn2016.i.dian.in/pages/yao-qing-bao-gao)
+%\end{itemize}
+
+%\section*{Major Courses Taken}
+%Classical and modern control theories, optimal control theory, optimization theory, time-varying stochastic system, system identification, signal processing, statistical machine learning theory, game theory, operational research, graph theory, probability theory and mathematical statistics
+
+%\section*{Language}
+%\begin{itemize}
+%\item $\bm{\cdot}$ Fluent in English, speaking and writing
+%\item $\bm{\cdot}$ Chinese (Native)
+%\end{itemize}
+
+
+
+%\section*{Referrers}
+
+%\begin{itemize}
+%\item 1. Professor Lei Guo\\
+%Academy of Mathematics and Systems Science, Chinese Academy of Sciences, Beijing, China.\\
+%\emph{Email}: {\tt lguo@amss.ac.cn}
+%\item 2. Professor Jifeng Zhang\\
+%Academy of Mathematics and Systems Science, Chinese Academy of Sciences, Beijing, China.\\
+%\emph{Email}: {\tt jif@iss.ac.cn }
+%\item 3. Professor Leyi Wang\\
+%Department of Electrical and Computer Engineering, Wayne State University, Detroit, MI, USA.\\
+%\emph{Email}: {\tt lywang@wayne.edu}
+%\item 4. Professor Miroslav Krstic\\
+%Department of Mechanical and Aerospace Engineering, University of California, San Diego, CA, USA.\\
+%\emph{Email}: {\tt krstic@ucsd.edu}
+
+%\end{itemize}
+
+
 \end{document}
-
